@@ -26,9 +26,9 @@
 <main>
   <p class="eyebrow">Page Turner</p>
   <h1>개인정보처리방침</h1>
-  <p class="muted">시행일: 2026년 11월 12일 · <nav style="display:inline"><a href="#en">English</a></nav></p>
+  <p class="muted">시행일: 2026년 11월 12일 (자동 인식 항목 추가) · <nav style="display:inline"><a href="#en">English</a></nav></p>
 
-  <p>Page Turner(이하 “앱”)는 연주를 따라 악보의 현재 마디를 표시하고 페이지를 넘겨 주는 앱입니다. 앱은 <b>개인정보를 수집하지 않습니다.</b> 회원가입, 서버, 광고, 이용 통계 분석 도구가 없으며, 앱이 다루는 모든 정보는 사용자의 기기 안에서만 처리됩니다.</p>
+  <p>Page Turner(이하 “앱”)는 연주를 따라 악보의 현재 마디를 표시하고 페이지를 넘겨 주는 앱입니다. 앱은 <b>개인정보를 수집하지 않습니다.</b> 회원가입, 광고, 이용 통계 분석 도구가 없으며, 아래 “음표 자동 인식”을 직접 실행할 때를 빼면 앱이 다루는 모든 정보는 사용자의 기기 안에서만 처리됩니다.</p>
 
   <h2>1. 마이크</h2>
   <ul>
@@ -42,6 +42,14 @@
     <li>앱을 삭제하거나 앱 데이터를 지우면 함께 삭제됩니다.</li>
   </ul>
 
+  <h2>2-1. 음표 자동 인식 (사용자가 실행할 때만)</h2>
+  <ul>
+    <li>사용자가 “음표 자동 인식”을 누르면, 그 PDF 파일 하나를 변환 서버로 보내 음표 정보(MusicXML)를 만들어 돌려받습니다.</li>
+    <li>서버는 변환에만 파일을 쓰며, <b>올린 PDF는 변환이 끝나는 즉시, 변환 결과는 앱이 받아 가는 즉시(늦어도 30분 안에) 삭제</b>합니다. 파일 내용을 다른 목적으로 쓰거나 보관·공유하지 않습니다.</li>
+    <li>남용 방지를 위해 접속 IP 주소를 최대 1시간 동안 메모리에서만 사용(시간당 변환 횟수 제한)하며 저장하지 않습니다.</li>
+    <li>전송은 암호화(HTTPS)됩니다. 이 기능을 쓰지 않으면 어떤 파일도 기기 밖으로 나가지 않습니다.</li>
+  </ul>
+
   <h2>3. 페달·MIDI 기기</h2>
   <p>블루투스·USB 페이지 터너와 MIDI 기기의 입력은 페이지 넘김과 연주 위치 계산에만 쓰이며 저장하거나 전송하지 않습니다.</p>
 
@@ -50,11 +58,11 @@
     <tr><th>권한</th><th>용도</th></tr>
     <tr><td>마이크 (RECORD_AUDIO)</td><td>마이크 버튼을 켰을 때 연주를 듣고 위치를 따라가기</td></tr>
     <tr><td>오디오 설정 (MODIFY_AUDIO_SETTINGS)</td><td>음악 인식에 맞게 입력 처리(에코 제거 등) 끄기</td></tr>
-    <tr><td>인터넷 (INTERNET)</td><td>앱 화면 구동에 필요한 기본 권한입니다. 앱은 외부 서버에 접속하지 않습니다.</td></tr>
+    <tr><td>인터넷 (INTERNET)</td><td>음표 자동 인식을 실행할 때 변환 서버와 통신합니다. 그 밖에는 외부 서버에 접속하지 않습니다.</td></tr>
   </table>
 
   <h2>5. 제3자 제공</h2>
-  <p>수집하는 정보가 없으므로 제3자에게 제공하거나 판매하는 정보도 없습니다.</p>
+  <p>개인정보를 수집하지 않으며, 자동 인식을 위해 보낸 파일도 제3자에게 제공하거나 판매하지 않습니다.</p>
 
   <h2>6. 아동</h2>
   <p>앱은 누구나 사용할 수 있으며, 아동을 포함한 어떤 사용자로부터도 개인정보를 수집하지 않습니다.</p>
@@ -66,9 +74,9 @@
 
   <p class="eyebrow">Page Turner</p>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective: November 12, 2026</p>
+  <p class="muted">Effective: November 12, 2026 (note recognition added)</p>
 
-  <p>Page Turner (“the app”) follows your performance, highlights the current measure on your score and turns pages for you. The app <b>does not collect any personal data.</b> There are no accounts, servers, ads or analytics; everything the app handles stays on your device.</p>
+  <p>Page Turner (“the app”) follows your performance, highlights the current measure on your score and turns pages for you. The app <b>does not collect any personal data.</b> There are no accounts, ads or analytics. Except when you run “Note recognition” below, everything the app handles stays on your device.</p>
 
   <h2>1. Microphone</h2>
   <ul>
@@ -82,6 +90,14 @@
     <li>They are deleted when you uninstall the app or clear its data.</li>
   </ul>
 
+  <h2>2-1. Note recognition (only when you run it)</h2>
+  <ul>
+    <li>When you tap “Note recognition”, that one PDF file is sent to our conversion server, which returns the notes (MusicXML).</li>
+    <li>The server uses the file only for the conversion. <b>The uploaded PDF is deleted as soon as conversion finishes, and the result as soon as the app downloads it (within 30 minutes at most).</b> File contents are never used for anything else, kept or shared.</li>
+    <li>To prevent abuse, your IP address is held in memory for up to one hour to limit conversions per hour, and is not stored.</li>
+    <li>Transfers are encrypted (HTTPS). If you don’t use this feature, no file ever leaves your device.</li>
+  </ul>
+
   <h2>3. Pedals and MIDI devices</h2>
   <p>Input from Bluetooth/USB page turners and MIDI devices is used only to turn pages and follow your performance. It is not stored or transmitted.</p>
 
@@ -90,11 +106,11 @@
     <tr><th>Permission</th><th>Purpose</th></tr>
     <tr><td>Microphone (RECORD_AUDIO)</td><td>Listen to your performance while the microphone button is on</td></tr>
     <tr><td>Audio settings (MODIFY_AUDIO_SETTINGS)</td><td>Turn off voice processing (echo cancellation etc.) that would distort music</td></tr>
-    <tr><td>Internet (INTERNET)</td><td>Standard permission required by the app’s web view. The app does not connect to any external server.</td></tr>
+    <tr><td>Internet (INTERNET)</td><td>Used to talk to the conversion server when you run note recognition. The app connects to no other external server.</td></tr>
   </table>
 
   <h2>5. Sharing</h2>
-  <p>Since no data is collected, nothing is shared with or sold to third parties.</p>
+  <p>No personal data is collected, and files sent for recognition are never shared with or sold to third parties.</p>
 
   <h2>6. Children</h2>
   <p>The app is suitable for everyone and does not collect personal data from any user, including children.</p>
